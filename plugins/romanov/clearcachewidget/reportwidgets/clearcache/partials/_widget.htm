@@ -1,0 +1,16 @@
+<div id="cachesizes" class="report-widget">
+    <h3><?= e(trans($this->property('title'))) ?></h3>
+    <div class="control-chart" data-control="chart-pie" data-size="<?=$radius?>" data-center-text="<?=$size['all']?>">
+        <ul>
+            <li>cms/cache<span><hide class="hidden"><?=$size['ccache_b']?></hide>&nbsp;<?=$size['ccache']?></span></li>
+            <li>cms/combiner<span><hide class="hidden"><?=$size['ccombiner_b']?></hide>&nbsp;<?=$size['ccombiner']?></span></li>
+            <li>cms/twig<span><hide class="hidden"><?=$size['ctwig_b']?></hide>&nbsp;<?=$size['ctwig']?></span></li>
+            <li>framework/cache<span><hide class="hidden"><?=$size['fcache_b']?></hide>&nbsp;<?=$size['fcache']?></span></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-success" style="margin-left: 50px;"
+            data-request="<?= $this->getEventHandler('onClear') ?>"
+            data-request-success="$('#cachesizes').replaceWith(data.partial)">
+        <?= e(trans('romanov.clearcachewidget::lang.plugin.clear')) ?> <span class="fa icon-trash"></span>
+    </button>
+</div>

@@ -1,0 +1,8 @@
+<div id="cachesizes" class="report-widget">
+    <h3><?= e(trans($this->property('title'))) ?></h3>
+    <button type="button" class="btn btn-success"
+            data-request="<?= $this->getEventHandler('onClear') ?>"
+            data-request-success="$('#cachesizes').replaceWith(data.partial)">
+        <?=$size['all']?> | <span class="fa icon-trash"></span>
+    </button>
+</div>

@@ -1,0 +1,21 @@
+1.0.1: First version of ClearCacheWidget
+1.0.2: Translate for brazilian portuguese
+1.0.3: Some fix
+1.0.4: Fix chart
+1.0.5: Add chart size property
+1.0.6: Add cs_CZ locale
+1.1.0: Added functionality to delete thumbs images. (set up in widget settings)
+1.1.1: Ability to specify the path to the folder preview. (set up in widget settings)
+1.1.2: Some fix. For those who use PHP version below 5.5
+1.1.3: Update cs_CZ locale
+1.1.4: Fix ErrorException
+1.1.5: Add french and italian locales
+1.2.0: Add property 'Regex for thumb file names'
+1.2.1: Add the Hungarian translation
+1.2.2: Fix for user defined widget title
+1.2.3: Add Turkish language file
+1.2.4: Add Dutch language
+1.2.5: IT locale updated
+1.2.6: Add sk locale
+1.3.0: Changing default regex for clearing thumbnails according to the comment https://github.com/romanov-acc/octobercms_clearcachewidget/pull/16#issuecomment-404909441
+1.3.1: Add Polish translation
